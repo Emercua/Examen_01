@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/9/90/Coffee-2346113.svg" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagenes</h1>
+    <h2>Tipos de Imagenes</h2>
+    <h3>Imagenes de mapa de bits</h3>
+    <ul>
+        <li>bmp</li>
+        <li>jpg</li>
+        <!-- Logos de coporaciones se utilizan png -->
+        <li>png</li>
+    </ul>
+    <!-- imagenes vectoriales -->
+    <h3>Imagenes Vectoriales</h3>
+    <ul>
+        <li>SVG</li>
+    </ul>
+    
+
+    <!-- <img src="img/Coffee-2346113.svg" alt="Taza de cafe"> -->
+
+    <!-- <img src="img/taza_caffe.jpg" alt="Taza de cafe solo italiano" width="100%">
+
+    <img src="img/taza_caffe.avif" alt="Taza de cafe solo italiano_Avif" width="100%"> -->
+
+    <picture>
+
+        <source srcset="img/taza_caffe_450.avif" media="(max-width: 450px)">
+        <source srcset="img/taza_caffe_900.avif" media="(max-width: 900px)">
+        <source srcset="img/taza_caffe_1350.avif" media="(max-width: 1350px)">
+        <img src="img/taza_caffe_2000.avif" alt="Taza de cafe solo italiano" width="100%">
+        
+    </picture>
+
+    <!-- <video src="assets/24496-344562743_small.mp4" width="100%" controls>
+    </video> -->
+
+    <video controls loop width="100%" muted>
+
+        <source src="assets/espacio_640.mp4" type="video/mp4">
+
+        <!-- <source media="(min-width: 640px)" srcset="assets/paisaje_2048.mp4"> -->
+
+        <!-- Es Video es incompatible con su navegador -->
+
+    </video>
+
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ftfUz6mj3FA?si=Z_wbQ4GvD2ckLejR" title="coches" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     
+</body>
+
+</html>
